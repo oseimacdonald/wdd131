@@ -41,7 +41,7 @@ nav a:hover {
 }
 
 main {
-    max-width: auto;
+    max-width: 2000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr; /* Two-thirds and one-third */
@@ -113,7 +113,7 @@ main {
 }
 
 .flag-image img {
-    max-width: auto; /* Adjust width of the flag image */
+    max-width: 200px; /* Adjust width of the flag image */
     height: auto;
     border: 1px solid #ccc; /* Optional: Add border around the flag */
 }
