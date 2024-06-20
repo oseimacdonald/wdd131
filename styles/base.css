@@ -1,0 +1,139 @@
+/* Example base.css styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #007bff; /* Dark blue background */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0px; /* Add margin at the bottom of the header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    background-color: #000; /* Black background for ul-list */
+    width: 100%; /* Occupy full width of the header */
+    justify-content: space-around;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+main {
+    max-width: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two-thirds and one-third */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Adjusted for content flow */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card .content {
+    flex: 1; /* Take up remaining space */
+}
+
+.card .about-me-container {
+    display: flex; /* Enable flexbox for side-by-side layout */
+}
+
+.card .about-me-text {
+    flex: 1; /* Take up remaining space */
+}
+
+.card .image-container {
+    flex-shrink: 0; /* Do not shrink the image container */
+    margin-left: 20px; /* Add spacing between content and image */
+}
+
+.card .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h2 {
+    text-align: center; /* Center align the heading */
+    background-color: #007bff; /* Blue background color */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+    margin-top: 0; /* Remove default margin */
+}
+
+.card h3 {
+    text-align: center; /* Center align the heading */
+    text-decoration: underline; /* Underline the heading */
+    margin-top: 10px; /* Add space above the heading */
+    font-size: 1.5em; /* Adjust font size as needed */
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.flag-container {
+    margin-top: 20px; /* Add margin above the flag */
+    display: flex; /* Enable flexbox for side-by-side layout */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.flag-image {
+    flex-shrink: 0; /* Do not shrink the flag image container */
+    margin-right: 20px; /* Add spacing between content and image */
+}
+
+.flag-image img {
+    max-width: auto; /* Adjust width of the flag image */
+    height: auto;
+    border: 1px solid #ccc; /* Optional: Add border around the flag */
+}
+
+.flag-text {
+    flex: 1; /* Take up remaining space */
+}
+
+/* Different background colors for sections */
+.card:nth-child(odd) {
+    background-color: #f0f0f0; /* Light gray background for odd cards */
+}
+
+.card:nth-child(even) {
+    background-color: #e0e0e0; /* Lighter gray background for even cards */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}

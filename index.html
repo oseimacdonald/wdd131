@@ -1,14 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>WDD 131</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Mac Donald Bonsu Osei</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Your Full Name | Keywords related to page content">
+    <meta name="author" content="Your Full Name">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Reference to JavaScript file with defer attribute -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    WDD 133 macdonald
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Mac Donald Bonsu Osei</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/">LinkedIn Profile</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <div class="content">
+                <h2>About Me</h2>
+                <div class="about-me-container">
+                    <div class="about-me-text">
+                        <p>Hello! My name is John Doe. I am passionate about web development and design. Currently, I am learning HTML, CSS, and JavaScript to build dynamic and interactive websites.</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/profile.webp" alt="Profile Image">
+                    </div>
+                </div>
+            
+                <h3>Accra, Ghana</h3>
+                <div class="flag-container">
+                    <div class="flag-image">
+                        <img src="images/ghana.webp" alt="Flag of Ghana">
+                        <p>Official Flag of Ghana</p>
+                    </div>
+                    <div class="flag-text">
+                        <p><strong>Capital:</strong> Accra</p>
+                        <p><strong>History:</strong> Ghana, located in West Africa, has a rich history that spans several centuries. Originally inhabited by various ethnic groups, Ghana became a powerful empire known as the Ghana Empire around the 8th century. It was renowned for its wealth and trade in gold and salt.</p>
+                        <p>In the 15th century, Portuguese explorers arrived and established trading posts along the coast. The area later became known as the Gold Coast due to its abundant gold resources.</p>
+                        <p>Ghana played a significant role in the transatlantic slave trade, with European powers establishing forts and trading in enslaved Africans. In the 19th century, the British gradually colonized the region, leading to the formation of the British Gold Coast colony.</p>
+                        <p>Ghana gained independence from British colonial rule on March 6, 1957, becoming the first sub-Saharan African nation to achieve independence. Kwame Nkrumah, Ghana's first president, played a crucial role in the independence movement and Pan-Africanism.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </section>
+    
+        <section class="card">
+            <div class="content">
+                <h2>Web Dev Resources</h2>
+                <p>Courses link.</p>
+                <ul>
+                    <li><a href="#">Resource Link 1</a></li>
+                    <li><a href="#">Resource Link 2</a></li>
+                    <li><a href="#">Resource Link 3</a></li>
+                    <li><a href="#">Resource Link 4</a></li>
+                    <li><a href="#">Resource Link 5</a></li>
+                    <li><a href="#">Resource Link 6</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>    
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Mac Donald Bonsu Osei, Accra/Ghana
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
