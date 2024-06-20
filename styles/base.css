@@ -76,8 +76,8 @@ main {
 }
 
 .card .image-container img {
-    max-width: 100%;
-    height: auto;
+    max-width: 120px;
+    height: 170px;
     border-radius: 5px;
 }
 
@@ -113,8 +113,8 @@ main {
 }
 
 .flag-image img {
-    max-width: auto; /* Adjust width of the flag image */
-    height: auto;
+    max-width: 140px; /* Adjust width of the flag image */
+    height: 250px;
     border: 1px solid #ccc; /* Optional: Add border around the flag */
 }
 
