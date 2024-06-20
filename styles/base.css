@@ -1,6 +1,6 @@
 /* Example base.css styles */
 body {
-    font-family: 'Roboto', sans-serif; /* 'Roboto' instead of 'ROBOTO' */
+    font-family: 'Roboto', sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
