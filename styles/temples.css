@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    max-width: 1400px;
+    max-width: auto;
     background-color: #007bff;
     color: #fff;
     padding: 1rem;
@@ -63,7 +63,7 @@ main {
 }
 
 footer {
-    max-width: 1400px;
+    max-width: auto;
     background-color: #007bff;
     color: #fff;
     text-align: center;
