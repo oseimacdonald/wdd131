@@ -1,3 +1,4 @@
+// JavaScript for responsive hamburger menu
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
 

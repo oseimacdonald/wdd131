@@ -1,10 +1,10 @@
 /* Styles for larger view (min-width: 768px) */
 header {
-    max-width: 100%; /* Ensure header takes full width */
+    max-width: 2400px;
 }
 
 footer {
-    max-width: 100%; /* Ensure footer takes full width */
+    max-width: 2400px;
     padding: 1rem 2rem; /* Increased padding */
 }
 
@@ -27,12 +27,6 @@ header h1 {
 main {
     max-width: 1200px; /* Limit maximum width of content */
     margin: 0 auto; /* Center align content */
-    padding: 1rem;
-}
-
-.gallery-section {
-    text-align: center; /* Center align content */
-    padding: 1rem; /* Padding around the section */
 }
 
 .gallery {
