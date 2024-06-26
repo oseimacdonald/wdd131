@@ -8,7 +8,6 @@ body {
 }
 
 header {
-    max-width: auto;
     background-color: #007bff;
     color: #fff;
     padding: 1rem;
@@ -63,7 +62,6 @@ main {
 }
 
 footer {
-    max-width: auto;
     background-color: #007bff;
     color: #fff;
     text-align: center;
@@ -72,6 +70,14 @@ footer {
 
 /* Styles for larger view */
 @media screen and (min-width: 768px) {
+    header {
+        max-width: 100%; /* Ensure header takes full width */
+    }
+
+    footer {
+        max-width: 100%; /* Ensure footer takes full width */
+    }
+
     header h1 {
         font-size: 2.5rem; /* Larger font size for larger screens */
     }

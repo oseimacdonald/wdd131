@@ -1,47 +1,73 @@
-/* Styles for larger view */
-@media screen and (min-width: 768px) {
-    header h1 {
-        font-size: 2.5rem; /* Larger font size for larger screens */
-    }
+/* Styles for larger view (min-width: 768px) */
+header {
+    max-width: 100%; /* Ensure header takes full width */
+}
 
-    .nav-links {
-        display: flex; /* Display navigation links in a row */
-    }
+footer {
+    max-width: 100%; /* Ensure footer takes full width */
+    padding: 1rem 2rem; /* Increased padding */
+}
 
-    .nav-links li {
-        margin: 0 1rem; /* Spacing between navigation links */
-    }
+header h1 {
+    font-size: 2.5rem; /* Larger font size for larger screens */
+}
 
-    .hamburger-menu {
-        display: none; /* Hide hamburger menu in larger view */
-    }
+.nav-links {
+    display: flex; /* Display navigation links in a row */
+}
 
-    main {
-        max-width: 1200px; /* Limit maximum width of content */
-        margin: 0 auto; /* Center align content */
-    }
+.nav-links li {
+    margin: 0 1rem; /* Spacing between navigation links */
+}
 
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        gap: 0.5rem; /* Gap between images */
-        justify-items: center; /* Center items horizontally */
-        align-items: center; /* Center items vertically */
-    }
+.hamburger-menu {
+    display: none; /* Hide hamburger menu in larger view */
+}
 
+main {
+    max-width: 1200px; /* Limit maximum width of content */
+    margin: 0 auto; /* Center align content */
+}
+
+.gallery-section {
+    text-align: center; /* Center align content */
+    padding: 1rem; /* Padding around the section */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 0.5rem; /* Gap between images */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center align content */
+}
+
+.gallery h2 {
+    margin-top: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Adjust as needed */
+    text-align: center; /* Center align heading */
+}
+
+.gallery figure {
+    display: inline-block;
+    margin: 0 0.5rem; /* Adjust spacing between images */
+}
+
+figure img {
+    width: 100%; /* Full width for figures */
+    max-width: 600px; /* Limit maximum width for better alignment */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover their containers */
+}
+
+@media screen and (min-width: 1200px) {
     .gallery figure {
-        width: 100%; /* Full width for figures */
-        max-width: 600px; /* Limit maximum width for better alignment */
+        margin: 0.5rem; /* Adjust spacing between images for wider screens */
     }
 
     figure img {
-        width: 400px; /* Fixed width for images */
+        width: 400px; /* Fixed width for images on larger screens */
         height: 300px; /* Fixed height for images */
-        object-fit: cover; /* Ensure images cover their containers */
-    }
-
-    footer {
-        background-color: #007bff; /* Updated background color */
-        padding: 1rem 2rem; /* Increased padding */
     }
 }
