@@ -1,5 +1,5 @@
 /* Styles for larger view */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800pxpx) {
     header h1 {
         font-size: 2.5rem; /* Larger font size for larger screens */
     }
