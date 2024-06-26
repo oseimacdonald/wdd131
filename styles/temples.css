@@ -42,6 +42,11 @@ nav {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-links a:hover {
+    color: #ff0; /* Change color on hover */
 }
 
 .hamburger-menu {
@@ -85,8 +90,8 @@ main {
 }
 
 figure img {
-    width: 400px; /* Full width for images */
-    height: 400px; /* Maintain aspect ratio */
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
 }
 
 footer {

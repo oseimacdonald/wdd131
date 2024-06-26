@@ -21,6 +21,17 @@ header h1 {
     margin: 0 1rem; /* Spacing between navigation links */
 }
 
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-links a:hover {
+    color: #ff0; /* Change color on hover */
+}
+
 .hamburger-menu {
     display: none; /* Hide hamburger menu in larger view */
 }
