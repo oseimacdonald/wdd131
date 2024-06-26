@@ -36,12 +36,13 @@ nav {
 
 .nav-links li {
     margin: 0.5rem 0;
+    font-size: 1.2rem;
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
@@ -98,5 +99,6 @@ footer {
     background-color: #007bff;
     color: #fff;
     text-align: center;
+    font-size: 1.2rem;
     padding: 0.5rem;
 }
