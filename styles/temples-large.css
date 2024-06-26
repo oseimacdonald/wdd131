@@ -27,6 +27,7 @@ header h1 {
 main {
     max-width: 1200px; /* Limit maximum width of content */
     margin: 0 auto; /* Center align content */
+    padding: 1rem;
 }
 
 .gallery-section {
