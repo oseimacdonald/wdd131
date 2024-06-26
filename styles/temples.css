@@ -90,8 +90,8 @@ main {
 }
 
 figure img {
-    width: 200px; /* Full width for images */
-    height: 200px; /* Maintain aspect ratio */
+    width: auto; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
 }
 
 footer {

@@ -55,8 +55,8 @@ main {
 }
 
 figure img {
-    width: 200px; /* Fixed width for images */
-    height: 200px; /* Fixed height for images */
+    width: auto; /* Fixed width for images */
+    height: auto; /* Fixed height for images */
     object-fit: cover; /* Ensure images cover their containers */
 }
 
