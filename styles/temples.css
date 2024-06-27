@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    color: #333;
+    color: #333; /* Darker text for better contrast */
 }
 
 header {
@@ -38,21 +38,23 @@ nav {
 .nav-links li {
     margin: 0.5rem 0;
     font-size: 1.2rem;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-links li:hover {
+    color: #ffd700; /* Change color on hover (adjust as needed) */
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 .nav-links a:hover {
-    color: #ff0; /* Change color on hover */
+    color: #ffd700;
 }
-
 .hamburger-menu {
-    display: block; /* Show only in mobile */
+    display: block;
     cursor: pointer;
 }
 
@@ -69,37 +71,39 @@ main {
 }
 
 .gallery-section {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding: 1rem;
-    flex-direction: column; /* Ensure items stack vertically */
-    align-items: center; /* Center items horizontally */
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
-    gap: 0.5rem; /* Gap between images */
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    max-width: 100%; /* Ensure gallery takes full width */
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .gallery figure {
     display: inline-block;
-    margin: 0 0.5rem; /* Adjust spacing between images */
+    margin: 0 0.5rem;
 }
 
 figure img {
-    width: auto; /* Full width for images */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 footer {
+    font-size: 1.2rem;
     background-color: #5c5cff;
     color: #fff;
     text-align: center;
-    font-size: 1.2rem;
     padding: 0.5rem;
 }

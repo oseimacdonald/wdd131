@@ -1,49 +1,47 @@
 /* Styles for larger view */
-@media screen and (min-width: 768px) {
-    header h1 {
-        font-size: 2.5rem; /* Larger font size for larger screens */
-    }
+header h1 {
+    font-size: 2.5rem;
+}
 
-    .nav-links {
-        display: flex; /* Display navigation links in a row */
-    }
+.nav-links {
+    display: flex;
+}
 
-    .nav-links li {
-        margin: 0 1rem; /* Spacing between navigation links */
-        font-size: 1.5rem; /* Adjusted font size */
-    }
+.nav-links li {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
 
-    .hamburger-menu {
-        display: none; /* Hide hamburger menu in larger view */
-    }
+.hamburger-menu {
+    display: none;
+}
 
-    main {
-        max-width: 1200px; /* Limit maximum width of content */
-        margin: 0 auto; /* Center align content */
-    }
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        gap: 0.5rem; /* Gap between images */
-        justify-items: center; /* Center items horizontally */
-        align-items: center; /* Center items vertically */
-    }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    justify-items: center;
+    align-items: center;
+}
 
-    .gallery figure {
-        width: 100%; /* Full width for figures */
-        max-width: 600px; /* Limit maximum width for better alignment */
-    }
+.gallery figure {
+    width: 100%;
+    max-width: 600px;
+}
 
-    figure img {
-        width: 200px; /* Fixed width for images */
-        height: 200px; /* Fixed height for images */
-        object-fit: cover; /* Ensure images cover their containers */
-    }
+figure img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
 
-    footer {
-        font-size: 1.2rem; /* Increased font size for better readability */
-        background-color: #5c5cff; /* Adjusted background color */
-        padding: 1rem 2rem; /* Increased padding */
-    }
+footer {
+    font-size: 1.2rem;
+    background-color: #5c5cff;
+    padding: 1rem 2rem;
 }
