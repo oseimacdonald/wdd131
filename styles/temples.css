@@ -1,4 +1,4 @@
-/* Basic styles for mobile view */
+/* Common styles for both mobile and larger view */
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
@@ -35,6 +35,10 @@ nav {
     padding: 0;
 }
 
+.nav-links.open {
+    display: flex; /* Show nav links when open class is applied */
+}
+
 .nav-links li {
     margin: 0.5rem 0;
     font-size: 1.2rem;
@@ -53,6 +57,7 @@ nav {
 .nav-links a:hover {
     color: #ffd700;
 }
+
 .hamburger-menu {
     display: block;
     cursor: pointer;
@@ -63,6 +68,11 @@ nav {
     height: 3px;
     background-color: #fff;
     margin: 5px 0;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.hamburger-menu:hover .line {
+    background-color: #ffd700; /* Change color on hover */
 }
 
 main {
