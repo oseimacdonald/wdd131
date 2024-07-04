@@ -1,0 +1,104 @@
+/* Global CSS */
+:root {
+    --primary-color: #123456; /* Adjust according to your color scheme */
+    --secondary-color: #0000ff; /* Adjust according to your color scheme */
+    --font-family: 'Roboto', sans-serif; /* Adjust font family */
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center navigation links horizontally */
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white; /* White color for links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #0000ff; /* Change color on hover to blue */
+}
+
+main {
+    padding: 1rem;
+    position: relative; /* Ensure main is relative for positioning */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+section {
+    margin-bottom: 2rem;
+    text-align: center; /* Center content inside sections */
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100; /* Ensure footer stays above other content */
+}
+
+.weather-icon {
+    display: inline-block;
+    width: 20px; /* Adjust icon size for mobile */
+    height: 20px; /* Adjust icon size for mobile */
+    background-image: url('images/weather-icon.svg'); /* Adjust path to your weather icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    main {
+        padding-top: calc(1rem + 1.5rem); /* Adjust padding top to account for header height */
+        padding-bottom: 4rem; /* Ensure space for footer */
+    }
+
+    #hero {
+        background-image: url('images/hero-small.webp');
+        background-size: cover;
+        background-position: center;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    #about, #weather, #attractions {
+        padding: 1rem;
+        background-color: rgba(18, 52, 86, 0.8); /* Darker green background color */
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    #weather {
+        min-height: 200px; /* Ensure minimum height for the weather section */
+    }
+
+    footer {
+        padding-top: 2rem; /* Adjust padding top to space out from the content above */
+    }
+}

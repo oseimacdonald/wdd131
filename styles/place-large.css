@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #123456; /* Adjust according to your color scheme */
+    --secondary-color: #0000ff; /* Adjust according to your color scheme */
+    --font-family: 'Roboto', sans-serif; /* Adjust font family */
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center; /* Align header content left for desktop */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Adjust spacing for navigation links */
+}
+
+nav li {
+    margin: 1rem 0; /* Add margin for vertical spacing */
+}
+
+nav a {
+    color: white; /* White color for links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #0000ff; /* Change color on hover to blue */
+}
+
+main {
+    padding: 1rem;
+    background-image: url('../images/hero-small.webp'); /* Set hero image as background */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
+}
+
+section {
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#about, #weather, #attractions {
+    background-color: rgba(0, 100, 0, 0.8); /* Darker green background color */
+}
+
+#about p, #weather p, #attractions p {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background for paragraphs */
+    padding: 1rem; /* Add padding to paragraphs */
+    border-radius: 8px; /* Optional: Add border radius to paragraphs */
+}
+
+#about {
+    order: 1; /* Display about section first on desktop */
+    position: absolute;
+    top: 1rem; /* Adjust top position */
+    left: 1rem; /* Adjust left position */
+    width: 40%; /* Adjust width as needed */
+}
+
+#weather {
+    order: 3; /* Display weather section third on desktop */
+    align-self: flex-end;
+    position: absolute;
+    text-align: center;
+    bottom: 1rem; /* Adjust bottom position */
+    right: 1rem; /* Adjust right position */
+    width: 30%; /* Adjust width as needed */
+}
+
+#attractions {
+    order: 4; /* Display attractions section fourth on desktop */
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem; /* Adjust padding as needed */
+}
+
+.weather-icon {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/weather-icon.svg'); /* Adjust path to your weather icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    header, footer {
+        text-align: center; /* Center header and footer content on mobile */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center; /* Center navigation links horizontally */
+    }
+
+    main {
+        background-image: none; /* Remove background image on mobile */
+    }
+}
+
+
+@media (min-width: 768px) {
+    #image {
+        display: none; /* Hide the image section on desktop */
+    }
+}
