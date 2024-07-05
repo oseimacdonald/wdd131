@@ -95,8 +95,8 @@ section {
 
 .weather-icon {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 100px; /* Adjust icon size for desktop */
+    height: 100px; /* Adjust icon size for desktop */
     background-image: url('../images/weather-icon.svg'); /* Adjust path to your weather icon */
     background-size: contain;
     background-repeat: no-repeat;

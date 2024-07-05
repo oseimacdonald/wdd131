@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
-    <script src="js/place.js" defer></script>
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,12 +29,14 @@
         <section id="hero">
             <!-- No <img> tag here -->
         </section>
-
-            <!-- Add a new section for the image -->
-    <section id="image">
-        <img src="images/hero-small.webp" alt="Mobile Image">
-    </section>
-
+        <!-- Add a new section for the image -->
+        <section id="image">
+            <img src="images/hero-small.webp"
+                 srcset="images/hero-small.webp 400w, images/hero-large.webp 800w"
+                 sizes="(max-width: 767px) 100vw, 50vw"
+                 alt="Mobile Image">
+        </section>
+        
         <section id="about">
             <h2>About Ghana</h2>
             <p>Ghana is a West African country known for its rich history, vibrant culture, and diverse landscapes. It gained independence from British colonial rule in 1957, becoming the first sub-Saharan African nation to achieve independence. Accra, the capital city, is a bustling urban center and a hub of culture, commerce, and government. Ghana is renowned for its traditional Ashanti and other indigenous cultures, vibrant music and dance, and welcoming hospitality. The country is also celebrated for its natural beauty, including expansive savannahs, tropical rainforests, and beautiful coastlines along the Gulf of Guinea. Ghana's economy is one of the strongest in Africa, driven by agriculture, mining (especially gold), and increasingly, services and technology sectors.</p>
