@@ -17,4 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const windChill = calculateWindChill(temperature, windSpeed);
     document.getElementById('windChill').textContent = windChill;
+
+    // Call updateWindChill when the page finishes loading
+    window.addEventListener('load', updateWindChill);
 });

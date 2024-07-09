@@ -98,7 +98,11 @@ footer {
         min-height: 200px; /* Ensure minimum height for the weather section */
     }
 
+    .desktop {
+    display: none; /* Hide desktop weather icon on mobile */
+    }
+
     footer {
         padding-top: 2rem; /* Adjust padding top to space out from the content above */
     }
-}
+}  

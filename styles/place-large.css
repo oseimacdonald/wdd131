@@ -133,4 +133,11 @@ footer {
     #image {
         display: none; /* Hide the image section on desktop */
     }
+    .weather-icons {
+        display: none; /* Hide weather icon on desktop */
+    }
+
+    .mobile {
+        display: none; /* Hide mobile weather icon on desktop */
+    }
 }
