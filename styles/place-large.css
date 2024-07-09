@@ -93,15 +93,26 @@ section {
     padding: 1rem; /* Adjust padding as needed */
 }
 
-.weather-icon {
+.weather-section h2 {
+    position: relative; /* Ensure relative positioning for pseudo-element */
+}
+
+.weather-section h2::after {
+    content: ''; /* Required for pseudo-elements */
     display: inline-block;
-    width: 100px; /* Adjust icon size for desktop */
-    height: 100px; /* Adjust icon size for desktop */
-    background-image: url('../images/weather-icon.svg'); /* Adjust path to your weather icon */
+    width: 20px; /* Adjust icon size for desktop */
+    height: 20px; /* Adjust icon size for desktop */
+    background-image: url('../images/weather-icon.svg'); /* Path to your weather icon */
     background-size: contain;
     background-repeat: no-repeat;
+    margin-right: 10px; /* Adjust spacing between icon and text */
     vertical-align: middle;
 }
+
+@media (max-width: 767px) {
+    /* Mobile styles here */
+}
+
 
 footer {
     background-color: var(--primary-color);
