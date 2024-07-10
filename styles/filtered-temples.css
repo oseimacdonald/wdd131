@@ -1,0 +1,119 @@
+/* Common styles for both mobile and larger view */
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333; /* Darker text for better contrast */
+}
+
+header {
+    background-color: #5c5cff;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: none; /* Initially hidden for mobile */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links.open {
+    display: flex; /* Show nav links when open class is applied */
+}
+
+.nav-links li {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-links li:hover {
+    color: #ffd700; /* Change color on hover (adjust as needed) */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.hamburger-menu:hover .line {
+    background-color: #ffd700; /* Change color on hover */
+}
+
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+.gallery-section {
+    text-align: center;
+    padding: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.gallery figure {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    font-size: 1.2rem;
+    background-color: #5c5cff;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+}

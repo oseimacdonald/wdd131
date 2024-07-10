@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Picture Album</title>
+    <meta name="description" content="WDD 131 - Temple Pictures In Ghana">
+    <meta name="author" content="Mac-Donald Bonsu Osei">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Temple Picture Album</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery-section">
+            <h2>Current Selection: Home</h2>
+            <section class="gallery" id="gallery">
+                <!-- Temple cards will be dynamically generated here -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> Brigham Young University-Idaho. Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
