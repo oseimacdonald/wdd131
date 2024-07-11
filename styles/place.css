@@ -44,6 +44,7 @@ main {
     padding: 1rem;
     position: relative; /* Ensure main is relative for positioning */
     overflow-x: hidden; /* Prevent horizontal scroll */
+    color: white;
 }
 
 section {
