@@ -3,69 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Page</title>
-    <meta name="description" content="WDD 131 - Place Page Of Ghana">
+    <title>Site Plan: Production Planning in Plastic Manufacturing</title>
+    <meta name="description" content="Production Planning Hub">
     <meta name="author" content="Mac-Donald Bonsu Osei">
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 768px)">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
-    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="siteplan.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <header>
-        <h1>Explore Ghana</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#weather">Weather</a></li>
-                <li><a href="#attractions">Attractions</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section class="section">
+        <h1>Site Name: Production Planning Hub</h1>
+        <p><strong>Reason for Site Name:</strong> This name reflects the focus on production planning strategies within the plastic manufacturing industry, providing a central hub for educational resources and interactive learning.</p>
+    </section>
 
-    <main>
-        <section id="hero">
-            <!-- No <img> tag here -->
-        </section>
-        <!-- Add a new section for the image -->
-        <section id="image">
-            <img src="images/hero-small.webp"
-                 srcset="images/hero-small.webp 400w, images/hero-large.webp 800w"
-                 sizes="(max-width: 767px) 100vw, 50vw"
-                 alt="Mobile Image">
-        </section>
-        
-        <section id="about">
-            <h2>About Ghana</h2>
-            <p>Ghana is a West African country known for its rich history, vibrant culture, and diverse landscapes. It gained independence from British colonial rule in 1957, becoming the first sub-Saharan African nation to achieve independence. Accra, the capital city, is a bustling urban center and a hub of culture, commerce, and government. Ghana is renowned for its traditional Ashanti and other indigenous cultures, vibrant music and dance, and welcoming hospitality. The country is also celebrated for its natural beauty, including expansive savannahs, tropical rainforests, and beautiful coastlines along the Gulf of Guinea. Ghana's economy is one of the strongest in Africa, driven by agriculture, mining (especially gold), and increasingly, services and technology sectors.</p>
-        </section>
+    <section class="section">
+        <h2>Site Purpose</h2>
+        <p>The site aims to educate students, professionals, and enthusiasts about production planning in plastic manufacturing. It covers processes, technologies, and case studies to enhance efficiency and quality control.</p>
+    </section>
 
-        <section id="weather" class="weather-section">
-            <h2>Weather</h2>
-            <img src="images/weather-icons.svg" alt="Weather Icon" class="weather-icon mobile">
-            <div class="weather-content">
-                <div class="weather-info">
-                    <p>Temperature: <span id="temperature">15°C</span></p>
-                    <p>Wind Speed: <span id="windSpeed">10 km/h</span></p>
-                    <p>Wind Chill: <span id="windChill">N/A</span></p>
-                </div>
-            </div>
-        </section>
+    <section class="section">
+        <h2>Scenarios</h2>
+        <ul>
+            <li>What are the primary processes involved in plastic manufacturing?</li>
+            <li>How can advanced technologies like CAD/CAM benefit production planning?</li>
+        </ul>
+    </section>
 
-        <section id="attractions">
-            <h2>Attractions</h2>
-            <ul>
-                <li>Attraction 1</li>
-                <li>Attraction 2</li>
-                <li>Attraction 3</li>
-            </ul>
-        </section>
-    </main>
+    <section class="section">
+        <h2>Color Schema</h2>
+        <p><strong>Main Color (#112A46):</strong> Used for headings and important text.</p>
+        <p><strong>Accent Color (#381145):</strong> Used for interactive elements and highlights.</p>
+    </section>
 
-    <footer>
-        <p>&copy; <span id="currentYear"></span> | Mac-Donald Bonsu Osei, Ghana | Last Updated: <span id="lastModified"></span></p>
-    </footer>
+    <section class="section">
+        <h2>Typography</h2>
+        <p><strong>Primary Font (Roboto, sans-serif):</strong> Used for body text for readability across devices.</p>
+    </section>
+
+    <section class="section">
+        <h2>Wireframe</h2>
+        <h3>Mobile View</h3>
+        <img src="images/mobile-wireframe.webp" alt="Mobile Wireframe">
+        <h3>Desktop View</h3>
+        <img src="images/desktop-wireframe.webp" alt="Desktop Wireframe">
+    </section>
+
+    <section class="section">
+        <h2>References</h2>
+        <p>Images for wireframes sourced from: <a href="#">example.com</a></p>
+    </section>
 </body>
 </html>

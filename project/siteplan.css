@@ -1,0 +1,67 @@
+/* Basic styling for the document */
+body {
+    font-family: 'Roboto', sans-serif; /* Primary Font */
+    line-height: 1.6;
+    margin: 20px;
+    background-color: white; /* Light background for contrast */
+}
+
+h1, h2 {
+    color: #112a46; /* Main Color */
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #acc8e5; /* Background for sections */
+    border-radius: 5px; /* Rounded corners for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+a {
+    color: #381145; /* Accent Color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    border: 1px solid #ddd; /* Light border around images */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Example of button styling */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #003470; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005b99; /* Darker shade for hover effect */
+}
+
+/* Additional typography styles */
+h1 {
+    font-weight: 700; /* Bold for headings */
+}
+
+h2 {
+    font-weight: 400; /* Normal weight for subheadings */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    body {
+        margin: 10px; /* Less margin on small screens */
+    }
+}
