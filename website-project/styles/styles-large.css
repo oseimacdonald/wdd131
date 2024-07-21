@@ -1,0 +1,19 @@
+/* Styles for larger screens (min-width: 768px) */
+/* Example styles: adjust as needed */
+header {
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
